@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> {% block title %}{% endblock title %}| sewian</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/homestyle.css">
+  <link rel="stylesheet" href="/static/about-style.css">
+  <link rel="stylesheet" href="/static/login.css">
+  <!-- {%block header%}{% endblock header%} -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Poppins:wght@100;300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+
+    <!-- ******************************caraousel***************************************** -->
+
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/1400x400/?lehenga" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1400x400/?pink" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1400x400/?hat" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+<div id="navbar">
+      <p id="logo">Sewian</p>
+      <img src="/static/bars-solid.svg" id='nav-icon' onclick="nav()" alt="">
+      <!-- <i class="fa-solid fa-bar"id="nav-icon" ></i> -->
+      <ul id="list">
+        <li class="nav-items"> <a href="#">Home</a> </li>
+        <li class="nav-items"> <a href="#">About</a> </li>
+        <li class="nav-items"> <a href="#">Profile</a> </li>
+        <li><button id="reg-btn"> <b>Register</b></button></li>
+      </ul>
+    </div>
+    
+    {% block body %}{% endblock body %}
+
+  </div>
+  <script src="/static/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

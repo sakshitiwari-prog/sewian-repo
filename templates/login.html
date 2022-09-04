@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'bars-solid.svg' %}?ver=2"/>
+<script src="{% static 'script.js' %}" defer></script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+{% block title %}siwian{% endblock title %}
+{% block body %}
+<!-- <p>yhjbh</p> -->
+<div id="login-container">
+    <div id="first-part">
+        <img id="tailor-logo" src="/static/tailoringmachine.png" alt=""> 
+        <img id="tailor-headline"src="/static/Best Tailoring Service.png" alt="">
+    </div>
+    <div id="second-part">
+        <div id="login-form">
+        <h6>Create an account</h6>
+        <p id="category" >Please select the category</p>
+        <form method="POST" action="/login">
+            {% csrf_token %}
+            <div id="radio">
+                <div id="customer" class="choice" onclick="customerSection()">Customer</div>
+                <div id="tailor" class="choice" onclick="TailorSection()">Tailor</div>
+            </div> 
+            <!-- {% csrf_token %} -->
+            <div id="first-row"  class="row-container">
+                <div id="firstname">
+                <label for="firstname">First Name</label> <br>
+                <input type="text" name="first_name" id="firstname">
+                </div>
+                <div class="block-box">
+                <label for="lastname">Last Name</label>
+                <br>
+                <input type="text" name="last_name" id="lastname">
+                </div>
+            </div>
+            <div id="sec-row" class="row-container">
+            <div class="block-box">
+            <label for="mail">Mail</label> <br>
+            <input type="text" name="mail" id="mail">
+            </div>   
+            <div class="block-box">
+            <label for="phone">Phone</label> <br>
+            <input type="text" name="phone" id="phone">    
+            </div> 
+            </div>  
+            <div id="sec-row" class="row-container">
+                
+            <div class="block-box">
+            <label for="Password">Password</label> <br>
+            <input type="password" name="Password" id="Password" class="pass">    
+            </div> 
+            <div class="block-box" id="changing-part">
+                <label for="Shopname">Shop name</label> <br>
+                <input type="text" name="Shopname" id="Shopname">
+                </div>  
+            </div>          
+            <label for="Address">Address</label>
+            <br>
+            <textarea name="Address"  id="Address" cols="140" rows="1"></textarea>
+            <div id="btn-container">
+            <button id="send-btn"> <p>Create account</p> </button>
+            </div>
+        <!-- <input type="text" id="mesaage">  -->
+    </form>
+    <p id="sign-in" > <span>Already have an account ?</span>  <u> <b>Sign in</b> </u> </p>
+    <!-- </div> -->
+        </div>
+    </div>
+</div>
+{% endblock body %}

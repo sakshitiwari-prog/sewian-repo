@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'bars-solid.svg' %}?ver=2"/>
+<script src="{% static 'script.js' %}" defer></script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<!-- <link rel="stylesheet" href="/static/homestyle.css"> -->
+<!-- {%block header%} -->
+<!-- <link rel="stylesheet" href="% {% static 'fontawesome/css/all.css' %}"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}">
+<!-- {% endblock header%} -->
+
+{% block title %}Home {% endblock title %}
+{% block body %}
+  <div   id="caraousel">
+    <div id="caraousel-content">
+      <h1>Get your <span>tailor</span>  at your doorstep</h1>
+      <p>we are here to providing you tailoring <br> services at your home.</p>
+      <button id="caraousel-btn">Get Started</button>
+    </div>
+    <div  id="caraousel-img1"></div>
+    <div id="caraousel-img2"></div>
+    <div id="caraousel-img3"></div>
+  </div>
+  <div id="facility">
+    <p id="facility-heading">What we provide ?</p>
+    <div id="facility-list">
+      <div class="facility-content">
+      <div class="img-container">
+        <img src="/static/iconmonstr-delivery-2 1.png" alt="" > 
+      </div>  
+        <h4>Convenience</h4> 
+        <p class="facility-desc">We provides you tailoring service at <br> home. it save transportation cost. <br>
+          it delivers your product safely.</p> 
+      </div>
+      <div class="facility-content">
+        <div class="img-container">
+          <img src="/static/Vector (10).png" alt="" > 
+       </div> 
+        <h4 class="headg">Time saving</h4> 
+        <p class="facility-desc centre" >You can spend your precious time  on<br> other work because it saves alot  of <br>travelling time as well as cost.</p> 
+      </div>
+      <div class="facility-content">
+       <div class="img-container">
+        <img src="/static/Vector (11).png" alt="img" >
+      </div>  
+        <h4 class="headg">Home service</h4> 
+        <p class="facility-desc centre">No matter where you’re .you can connect <br> with your tailor in your area.now no need <br> to be stressed to find the best tailor.</p> 
+      </div>
+    </div>
+    
+  </div>
+  <div id="use-case">
+    <p id="use-heading">
+      <b> How to use ?</b>
+    </p>
+    <div id="use-box">
+      <div class="step-box">
+        <div class="step-heading">
+        <h5>  Sign up/ Sign in</h5>
+        </div>
+        <div class="circle">
+          <div class="inner-circle">
+            <img src="/static/clarity_form-line.png"class="circle-img" alt="">
+          </div>
+        </div>
+        <div class="step-content">
+        <p>  If the form has not been filled yet, <br> then fill it or else the people who <br> have filled it should login.</p> 
+        </div>
+      </div>
+      <div class="line-container">
+            <div class="line"></div>
+          </div>
+      <div class="step-box">
+        <div class="step-heading">
+        <h5>  Get notification</h5>
+        </div>
+        <div class="circle">
+          <div class="inner-circle">
+            <img src="/static/ic_outline-notification-add.png"class="circle-img" alt="">
+          </div>
+        </div>
+        <div class="step-content">
+        <p> You will get notification of tailors in  <br> which email & phone number of tailors <br> are given so you can contact them.</p> 
+        </div>
+      </div>
+      <div class="line-container">
+            <div class="line"></div>
+          </div>
+      <div class="step-box">
+        <div class="step-heading">
+          <h5> Connect</h5>
+        </div>
+        <div class="circle">
+          <div class="inner-circle">
+            <img src="/static/eva_phone-call-outline.png"class="circle-img" alt="">
+          </div>
+        </div>
+        <div class="step-content">
+          <p>Once you will login. you can able to <br> contact the tailors through email and <br> phone numbers.</p>
+        </div>
+      </div>
+      <div class="line-container">
+            <div class="line"></div>
+          </div>
+      <div class="step-box">
+        <div class="step-heading">
+        <h5> Share ideas</h5> 
+        </div>
+        <div class="circle">
+          <div class="inner-circle">
+            <img src="/static/Vector (12).png"class="circle-img" alt="">
+          </div>
+        </div>
+        <div class="step-content">
+         <p> you can tell them about your ideas  <br> by which they will make your clothes  <br> with help of your given information.</p>
+        </div>
+      </div>
+      <div class="line-container">
+            <div class="line"></div>
+          </div>
+      <div class="step-box">
+        <div class="step-heading">
+          <h5> Delivery</h5>
+        </div>
+        <div class="circle">
+          <div class="inner-circle">
+            <img src="/static/iconmonstr-delivery-2 1.png" class="circle-img" alt="">
+          </div>
+        </div>
+        <div class="step-content">
+        <p> Once , you will final the design .then <br> tailor will make your clothes ready and <br> deliver it at your home.</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="register-box">
+    <img src="/static/iconmonstr-cut-1 1.png"  id="scissor">
+    <div id="register-info">
+      <p id="reg-heading"> <b>Get start your first <br>
+        door-step Tailoring Service</b> </p>
+      <p id="register-content">
+        No matter where you’re .you can connect with your tailor in your <br> area. now no need to be stressed to find the best tailor.
+      </p>
+      <button id="register-btn"> <b>Register Here</b></button>
+    </div>
+    <img src="/static/iconmonstr-pin-23 1 (2).png"  id="pin">
+  </div>
+  <div id="testimonial-box">
+    <h6 id="testimonial-heading">  We Care About Our Customers <br>
+      Experience Too
+    </h6>
+    <div id="testimonials">
+      <div id="testimonials__slides"></div>
+      <button id="testimonials-btn-prev" class="testimonials-btn" onclick="moveToNext()"><</button>
+      <button id="testimonials-btn-next" class="testimonials-btn" onclick="moveToPrevious()">></button>
+    </div>
+  </div>
+  <div id="contact-container">
+    
+    <h2 >Contact Us</h2>
+    <form method="post" >{% csrf_token %}
+            <div id="first-row"  class="row-container">
+              <div id="firstname">
+                <label for="firstname">First Name</label> <br>
+                <input type="text" id="firstname"  name="firstname">
+              </div>
+              <div class="block-box">
+                <label for="lastname">Last Name</label>
+                <br>
+                <input type="text" id="lastname" name="lastname">
+              </div>
+      
+
+          </div>
+          <div id="sec-row" class="row-container">
+          <div class="block-box">
+            <label for="mail">Mail</label> <br>
+            <input type="text" id="mail" name="mail">
+          </div>   
+            <div class="block-box">
+              <label for="phone">Phone</label> <br>
+              <input type="text" id="phone" name="phone">    
+
+            </div> 
+                          </div>  
+            <label for="mesaage">Message</label>
+            <br>
+            <textarea  id="message" cols="140" rows="3" name="desc"></textarea>
+            <div id="btn-container">
+              <button id="send-btn"> <h6>Send Message</h6> </button>
+            </div>
+          
+          <!-- <input type="text" id="mesaage"> -->
+    </form>
+    
+    
+    <div id="footer">
+      <img src="/static/bxl_facebook.png" alt="" class="icon" id="icon1">
+      <img src="/static/Vector (16).png" alt="" class="icon"id="icon2">
+      <img src="/static/Vector (15).png" alt="" class="icon special-icon"id="icon3">
+      <img src="/static/akar-icons_linkedin-fill.png" alt="" class="icon " id="icon4">
+      <img onclick="moveToTop()" src="/static/bi_arrow-down-circle-fill (1).png" alt="" class="icon special">
+    </div> 
+    
+  </div>
+  
+{% if messages %}
+{% for message in messages %}
+  <div class="signal alert alert-{{ message.tags }} alert-dismissible fade show" style="width: 100%;" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
+  {% endif %}
+{% endblock body %}

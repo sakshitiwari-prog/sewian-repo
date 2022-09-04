@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+#container{
+    background-color: #403A51;
+    width: 100%;
+    /* height: 100%; */
+}
+#container #navbar{
+    background-color: #403A51;
+    width: 100%;
+    height: 6rem;
+    /* position: relative; */
+    /* position: -webkit-sticky; */
+    z-index: 22;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container #navbar #list{
+    display: flex;
+    margin: 0 5rem;
+}
+#container #navbar #logo{
+    font-family: 'Lavishly Yours', cursive;
+    margin: 0 5rem;
+    color: white;
+    font-size: 3rem;
+/* font-family: 'Poppins', sans-serif; */
+}
+#container #navbar ul li{
+    padding-left:3rem ;
+    list-style: none;
+
+}
+#container #navbar ul a{
+    list-style: none;
+    padding-top: 2rem;
+    color: white;
+    text-decoration: none;
+}
+#container #navbar ul #reg-btn{
+    border: none;
+    border-radius: 15px;
+    height: 2.5rem;
+    width: 10rem;
+    color: #574C77;
+    background-color: white;
+
+}
+#container #navbar ul .nav-items{
+    padding-top: .5rem;
+    font-size: 1.5rem
+}
+#container #carousel{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    border: none;
+    display: flex;
+}
+#container #navbar #nav-icon{
+    z-index: 2;
+    width: 20px;
+    /* background: wheat; */
+    /* color: black; */
+    height: 20px;
+    position: absolute;
+    /* left: 0; */
+    display: none;
+    /* visibility: 0; */
+    right: 5rem;
+    top: 1.5rem;
+
+}
+
+
+@media only screen and (max-width:800px) {
+    #container #navbar #list{
+        display: none;
+        position: absolute;
+        right: -5rem;
+        top: 3rem;
+    }
+    #container #navbar #list.active{
+        display: block;
+    }
+    #container #navbar #nav-icon{
+        display: inline;
+    }
+    
+}
+.signal{
+    top: bottom;
+    position: sticky;
+}
