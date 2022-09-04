@@ -2,7 +2,7 @@ from re import A
 from django.http import HttpResponse
 from django.shortcuts import redirect, render,HttpResponse
 from urllib import request
-from sew.models import Reach
+from sew.models import Reach,Customer_Signup
 from django.contrib import messages
 # Create your views here.
 def home(request): 
@@ -28,13 +28,13 @@ def account(request):
 def login(request):
     # return HttpResponse('to looged in'
     #)
-    # if request.method=='POST':
-    #     first_name=request.POST.get('first_name')
-    #     last_name=request.POST.get('last_name')
-    #     mail=request.POST.get('mail')
-    #     phone=request.POST.get('phone')
-    #     Password=request.POST.get('Password')
-    #     Address=request.POST.get('Address')
-    #     login=Login(first_name=first_name,last_name=last_name,mail=mail,phone=phone,Password=Address)
-    #     Login.save()
+    if request.method=='POST':
+        firstname=request.POST.get('firstname')
+        lastname=request.POST.get('lastname')
+        mail=request.POST.get('mail')
+        phone=request.POST.get('phone')
+        password=request.POST.get('password')
+        address=request.POST.get('address')
+        customer_signup=Customer_Signup(firstname=firstname,lastname=lastname,mail=mail,phone=phone,password=password,address=address)
+        customer_signup.save()
     return render(request,'login.html')
