@@ -20,3 +20,14 @@ class Customer_Signup(models.Model):
     
     def __str__(self):
         return self.firstname
+class Tailor_Signup(models.Model):
+    firstname=models.CharField(max_length=122)
+    lastname=models.CharField(max_length=122)
+    mail=models.CharField(max_length=122)
+    phone=models.CharField(max_length=122)
+    password=models.CharField(max_length=50)
+    shopname=models.CharField(max_length=122)
+    address=models.CharField(max_length=122)
+    
+    def __str__(self):
+        return self.firstname

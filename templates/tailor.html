@@ -18,12 +18,12 @@
         <div id="login-form">
         <h6>Create an account</h6>
         <p id="category" >Please select the category</p>
-        <form method="POST" action="/login">
+        <form method="POST" action="/tailor">
             {% csrf_token %}
             <div id="radio">
                 <div id="customer" class="choice"onclick="customerSection()" > <a href="/templates/login.html">Customer</a> </div>
                 <div id="tailor" class="choice" onclick="TailorSection()" > <a href="/templates/tailor.html">Tailor</a> </div>
-            </div> > 
+            </div> 
             <!-- {% csrf_token %} -->
             <div id="first-row"  class="row-container">
                 <div id="firstname">
@@ -48,10 +48,14 @@
             </div>  
             <div id="sec-row" class="row-container">
                 
-                <div class="block-box">
-                    <label for="password">Password</label> <br>
-                    <input type="password" name="password" id="password" class="pass" style="width: 53rem;">    
-                    </div> 
+            <div class="block-box">
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="password" class="pass" style="width: 24.5rem;">    
+            </div> 
+            <div class="block-box" id="changing-part" style=" visibility: visible;">
+                <label for="shopname">Shop name</label> <br>
+                <input type="text" name="shopname" id="shopname">
+                </div>  
             </div>          
             <label for="address">Address</label>
             <br>

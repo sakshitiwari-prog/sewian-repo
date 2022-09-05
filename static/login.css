@@ -112,7 +112,7 @@ html{
     margin: 2rem 0 0 0;
 }
 #second-part form .pass, #Address{
-    width: 53rem;
+    width: 24.5rem;
 }
 #second-part form #send-btn{
     width: 53rem;
@@ -141,7 +141,7 @@ html{
     color:#6f6f6f;
 
 }
-#changing-part{
+/* #changing-part{ */
     /* display: flex; */
-    visibility: hidden;
-}
+    /* visibility: hidden; */
+/* }/ */

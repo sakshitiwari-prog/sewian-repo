@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'bars-solid.svg' %}?ver=2"/>
+<script src="{% static 'script.js' %}" defer></script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+{% block title %}siwian{% endblock title %}
+{% block body %}
+<!-- <p>yhjbh</p> -->
+<div id="login-container">
+    <div id="first-part">
+        <img id="tailor-logo" src="/static/tailoringmachine.png" alt=""> 
+        <img id="tailor-headline"src="/static/Best Tailoring Service.png" alt="">
+    </div>
+    
+</div>
+{% endblock body %}

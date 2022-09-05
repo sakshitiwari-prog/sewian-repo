@@ -5,6 +5,7 @@ from sew import views
 urlpatterns = [
     path('',views.home,name='home'),
     path('about',views.about,name='about'),
-    path('account',views.account,name='account'),
-    path('login',views.login,name='login')
+    path('signin',views.signin,name='signin'),
+    path('login',views.login,name='login'),
+    path('tailor',views.tailor,name='tailor')
 ] 
